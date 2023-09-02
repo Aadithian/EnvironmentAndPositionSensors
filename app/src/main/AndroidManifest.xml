@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.position">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sensor Sample"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Position">
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".Front"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".ProximityDataActivity" />
+        <activity android:name=".GameRotationDataActivity" />
+        <activity android:name=".GeomagneticRotationDataActivity" />
+        <activity android:name=".MagneticFieldDataActivity" />
+        <activity android:name=".OrientationDataActivity" />
+        <activity android:name=".Environment" />
+        <activity android:name=".MainActivity" />
+
+        <!-- Add permissions, services, and other components here as needed -->
+
+    </application>
+
+</manifest>
